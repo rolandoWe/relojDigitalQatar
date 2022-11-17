@@ -7,8 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-        /* background-image: url(imagenes/doha1.webp); */
-        animation:  ani 50s infinite linear;
+        background-image: url(imagenes/qatar-desert-venue-jpg_header-193416.jpeg);
+        /* animation:  ani 50s infinite linear; */
 
     background-position:top;
     background-size: cover;
@@ -34,19 +34,16 @@
     position: relative;
 
     animation: animar 60s infinite linear;
-    /* border: solid #0000ff 2px; */
-    /* background-color: rgb(0, 1, 24); */
-    /* background-image: linear-gradient(rgba(73, 0, 10, 0.9),rgba(73, 0, 10, 0.9)), url(imagenes/estadioLusail.png); */
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
     background-blend-mode: luminosity;
 
-    /* box-shadow: 0px 0px 10px 5px rgb(255, 255, 255) inset; */
+    box-shadow: 0px 80px 100px 1px rgba(255, 0, 0, 0.3);
     box-sizing: border-box;
     color: rgb(6, 6, 6);
     /* transition: .1s; */
-    text-shadow: 1px 1px rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(255, 0, 0);
     border-radius: 10px;
     padding: 20px;
     width: 60%;
@@ -73,11 +70,13 @@
 }
 .contenedor h2{
     font-size: 35px;
-    border-bottom: solid rgb(193, 164, 48,.5) 4px;
+    border-bottom: solid rgba(160, 0, 0, 0.9) 4px;
     border-radius: 50%;
     /* background-color: rgb(255, 0, 0,.9); */
 }
 .reloj{
+    position: relative;
+
     /* border: solid red 1px; */
     width:100%;
     text-align: center;
@@ -113,11 +112,24 @@
     z-index: 1000;
 
 }
+.am_pm,.segundos{
+    position: absolute;
+    font-size: 30px;
+    right: 30%;
+
+}
+.am_pm{
+top: 60px;
+}
+.segundos{
+    top: 30px;
+}
 .anio{
     width:100%;
     /* text-align: left; */
-    border-top: solid rgb(193, 164, 48,.5) 4px;
+    border-top: solid rgba(160, 0, 0, 0.9) 4px;
     border-radius: 50%;
+    font-size: 28px;
 }
 
 @media (max-width:576px){
