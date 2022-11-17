@@ -31,6 +31,8 @@ function reloj(){
         AM="AM"
     }
 
+    if(hora==0) hora="0"+hora;
+
     if(segundo<10) segundo="0"+segundo;
     if(minuto<10) minuto="0"+minuto;
 
