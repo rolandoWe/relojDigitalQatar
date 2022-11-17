@@ -1,0 +1,127 @@
+
+.container{
+    position:relative;
+    /* background-image: linear-gradient(red, red); */
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        /* background-image: url(imagenes/doha1.webp); */
+        animation:  ani 50s infinite linear;
+
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(250, 208, 108, 0.5);
+}
+@keyframes ani{
+    0%{background-image: url(imagenes/qatar-desert-venue-jpg_header-193416.jpeg);}
+    10%{background-image: url(imagenes/doha2.jpg);}
+    50%{background-image: url(imagenes/doha3.webp);}
+    80%{background-image: url(imagenes/doha1.webp);}
+    100%{background-image: url(imagenes/qatar-desert-venue-jpg_header-193416.jpeg);}
+}
+.contenedor{
+    position: relative;
+
+    animation: animar 60s infinite linear;
+    /* border: solid #0000ff 2px; */
+    /* background-color: rgb(0, 1, 24); */
+    /* background-image: linear-gradient(rgba(73, 0, 10, 0.9),rgba(73, 0, 10, 0.9)), url(imagenes/estadioLusail.png); */
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+
+    /* box-shadow: 0px 0px 10px 5px rgb(255, 255, 255) inset; */
+    box-sizing: border-box;
+    color: rgb(6, 6, 6);
+    /* transition: .1s; */
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Michroma', sans-serif;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Rubik Dirt', cursive;
+    z-index:900
+}
+@keyframes animar{
+    /* 0%{    background-image: linear-gradient(rgba(73, 0, 10, 0.9),rgba(73, 0, 10, 0.9)), url(imagenes/estadioLusail.png);}
+    50%{    background-image: linear-gradient(rgba(73, 0, 10, 0.9),rgba(73, 0, 10, 0.9)), url(imagenes/esatdio2.png);}
+    100%{    background-image: linear-gradient(rgba(73, 0, 10, 0.9),rgba(73, 0, 10, 0.9)), url(imagenes/estadio3.png);} */
+    0%{background-image:  url(imagenes/974Stadium.webp)}
+    10%{background-image:  url(imagenes/lusailStadium.png)}
+    20%{background-image:  url(imagenes/ahmad-bin-aliStadium.jpg)}
+    30%{background-image:  url(imagenes/khalifaStadium.jpg)}
+    50%{background-image:  url(imagenes/alJanoubStadium.png)}
+    70%{background-image:  url(imagenes/alRayanStadium.jpg)}
+    80%{background-image:  url(imagenes/Estadio-Education-City.jpg)}
+    90%{background-image:  url(imagenes/Estadio_Al_Thumama.webp)}
+    100%{background-image:  url(imagenes/974Stadium.webp)}
+}
+.contenedor h2{
+    font-size: 35px;
+    border-bottom: solid rgb(193, 164, 48,.5) 4px;
+    border-radius: 50%;
+    /* background-color: rgb(255, 0, 0,.9); */
+}
+.reloj{
+    /* border: solid red 1px; */
+    width:100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contenedor::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    /* background-color: rgb(255, 0, 0,.2); */
+    border-radius: 10px;
+}
+.reloj span{
+    display: inline-block;
+}
+.dia,.fecha,.mes{
+    /* border:solid green 1px; */
+    width: 90%;
+    text-align: left;
+    /* background-color: rgb(0, 0, 255,.1); */
+}
+.hora_min{
+    width:75%;
+    /* border: solid yellow 1px; */
+    font-size: 55px;
+}
+.fecha,.hora_min,.segundos,.am_pm,.anio{
+    z-index: 1000;
+
+}
+.anio{
+    width:100%;
+    /* text-align: left; */
+    border-top: solid rgb(193, 164, 48,.5) 4px;
+    border-radius: 50%;
+}
+
+@media (max-width:576px){
+    .contenedor{
+        width:100%
+    }
+}
